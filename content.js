@@ -41,14 +41,16 @@ async function ExtractTranscript(){
 				}
 				else{
 
-						let plaintext = ''
+						let plaintext = []
+						let plaintext_str = ''
 						transcript.forEach(segment=>{
 				
 						const text = segment.querySelector('.segment-text')?.textContent
 						if (text){
 						
 						
-							plaintext += text
+							plaintext.push(text);
+							plaintext_str += plaintext.join(" ")	
 
 								}
 

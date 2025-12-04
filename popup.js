@@ -49,7 +49,7 @@ document.getElementById('copyBtn').addEventListener('click', () => {
         navigator.clipboard.writeText(window.currentTranscript).then(() => {
             const copyBtn = document.getElementById('copyBtn');
             const originalText = copyBtn.textContent;
-            copyBtn.textContent = '✓ Copied!';
+            copyBtn.textContent = 'Copied!';
             setTimeout(() => {
                 copyBtn.textContent = originalText;
             }, 2000);
